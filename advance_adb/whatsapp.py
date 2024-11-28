@@ -36,19 +36,3 @@ class whatsapp:
             self.send_msg(mob, msg)
         sleep(2)
         self.app.force_stop('com.whatsapp')
-    def export_chat(self, mob_no, out_file='chat.txt'):
-        '''Saves the exported chat to specified file'''
-        self.adb.shell('am start -a android.intent.action.VIEW -d "whatsapp://send?phone={mob}')
-        sleep(5)
-        self.adb.shell('input keyevent 82')
-        sleep(1)
-        self.adb.shell('input keyevent 280')
-        self.adb.shell('input keyevent 66')
-        sleep(1)
-        self.adb.shell('input keyevent 280')
-        self.adb.shell('input keyevent 280')
-        self.adb.shell('input keyevent 66')
-        sleep(1)
-        self.adb.shell('input keyevent 281')
-        self.adb.shell('input keyevent 66')
-        # TODO       
