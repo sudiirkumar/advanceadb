@@ -1,4 +1,4 @@
-from adb import Adb
+from advance_adb.adb import Adb
 
 class app:
     def __init__(self, device_id=None):

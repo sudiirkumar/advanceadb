@@ -1,7 +1,7 @@
-from adb import Adb
-from files import files
-from app import app
-from misc import Misc
+from advance_adb.adb import Adb
+from advance_adb.files import files
+from advance_adb.app import app
+from advance_adb.misc import Misc
 from time import sleep
 import csv
 

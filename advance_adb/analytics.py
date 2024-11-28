@@ -1,5 +1,5 @@
-from adb import Adb
-from files import files
+from advance_adb.adb import Adb
+from advance_adb.files import files
 
 class Analytics:
     def __init__(self, device_id=None):

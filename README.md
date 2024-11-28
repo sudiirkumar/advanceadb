@@ -6,7 +6,7 @@ Installation
 
 To install the library, use pip:
 
-pip install advanceadb
+pip install advance_adb
 
 Features
 

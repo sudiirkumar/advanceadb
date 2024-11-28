@@ -1,5 +1,5 @@
-from adb import Adb
-from files import files
+from advance_adb.adb import Adb
+from advance_adb.files import files
 class Misc:
     def __init__(self, device_id=None):
         self.adb = Adb(device_id)
