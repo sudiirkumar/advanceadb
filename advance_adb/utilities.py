@@ -13,12 +13,14 @@ class utils:
         print("Fetching list of packages installed in your device...")
         packages = self.app.get_installed_packages_names()
         launchable_packages = []
+        print("List of packages installed in your device :")
+        i = 0
         for p in packages:
             if self.app.if_launchable(p):
                 launchable_packages.append(p)
-        print("List of packages installed in your device :")
-        for i in range(len(launchable_packages)):
-            print(f'{i + 1}. {launchable_packages[i]}')
+                temp = p.split('.')
+                print(f'{i + 1}. Company name: {''.join(temp[1:-1])}\t\tApp name: {''.join(temp[-1])}')
+                i += 1
         apps = input("Enter apps which you want to remove (like 3 or 1,3,5) : ")
         l = apps.split(",")
         for i in l:

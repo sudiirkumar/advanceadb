@@ -33,4 +33,3 @@ class Misc:
     
     def open_url(self, url):
         return self.adb.shell(f'am start -a android.intent.action.VIEW -d {url}')
-    
